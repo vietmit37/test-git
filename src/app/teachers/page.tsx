@@ -14,6 +14,7 @@ function Teachers() {
       <CardTeacher />
       <CardTeacher />
       <CardTeacher />
+      123
     </div>
   );
 }
