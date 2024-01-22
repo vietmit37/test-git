@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../styles/layouts/layoutClient.scss";
+@import "../styles/auth/login.scss";
+@import "../styles/elements/table.scss";
+@import "../styles/elements/upload.scss";
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --font-inter: 'Figtree', 'Figtree-fallback', 'Figtree-fallback-android', 'Noto Sans', 'NotoSans-fallback', 'NotoSans-fallback-android', sans-serif;
+}
+html {
+  font-family: var(--font-inter);
+}
+body {
+    color: rgb(var(--foreground-rgb));
+    background: no-repeat;
+ }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+.container {
+  @media only screen and (min-width: 468px) {
+    @apply px-2 md:px-0 ;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: 748px) {
+    @apply px-4 ;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: 968px) {
+    @apply px-2 md:px-0 ;
+    margin: 0 auto;
+    min-width: 700px !important;
+  }
+  @media only screen and (min-width: 1366px) {
+    @apply px-2 md:px-0;
+    margin: 0 auto;
+    max-width: 1250px;
+  }
+}
+
+.footer{
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: auto !important;
+  background-color: #0e1b1f;
+  background-size: contain;
+  z-index: 1;
+  &::before{
+    content: "";
+    background-image: url(../assets/footer.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  &-bottom{
+    background-color: #1f343b;
+    padding: 10px 0;
+    margin-top: 3rem;
+  }
+}

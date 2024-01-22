@@ -1,0 +1,20 @@
+.form-avatar .ant-upload-wrapper {
+  aspect-ratio: 1 / 1 !important;
+  overflow: hidden !important;
+}
+
+.form-avatar .ant-upload-list.ant-upload-list-picture-card {
+  height: 100% !important;
+}
+
+.form-avatar .ant-upload-list-item-container,
+.form-avatar .ant-upload.ant-upload-select {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.form-avatar .ant-upload-list-item-thumbnail {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
