@@ -16,6 +16,7 @@ function Teachers() {
       <CardTeacher />
       123
       456
+      789
     </div>
   );
 }
